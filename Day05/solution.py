@@ -9,7 +9,7 @@ for entry in almanac:
         instructions.append(newInstruction)
         newInstruction = []
     else:
-        newInstruction.append([int(number) for number in entry.split()])
+        newInstruction.append(tuple([int(number) for number in entry.split()]))
 instructions.append(newInstruction)
 instructions.pop(0)
 locations = []
